@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+#tieBreak {
+    opacity: 0;
+}
+
+#tieBreak.overtime {
+    opacity: 1;
+}
+
+#winMsg {
+    opacity: 0;
+  }
+  
+#winMsg.fadeIn {
+    opacity: 1;
+}
+
+.card {
+    box-shadow: 0 0.8em 0.8em -0.07em black
+}

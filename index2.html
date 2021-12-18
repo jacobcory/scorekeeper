@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <b><span class="is-size-3 has-text-white has-background-danger"
+                                        id="tieBreak"></span></b>
+                                <h1 class="is-size-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h1>
+
+                                <label for="playto" class="label is-large is-inline">Playing to: </label>
+                                <div class="select is-rounded">
+                                    <select name="" id="playto">
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="21">21</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </div>
+                            <b> <span class="has-text-success" id="winMsg"></span></b>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="is-primary button card-fotter-item is-large is-fullwidth" id="p1Button">+1
+                                Player
+                                One</button>
+                            <button class="is-link button card-fotter-item is-large is-fullwidth" id="p2Button">+1
+                                Player
+                                Two</button>
+                            <button class="is-danger button card-fotter-item is-large is-fullwidth"
+                                id="reset">Reset</button>
+                        </footer>
+                        <p class="subtitle">must win by 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app2.js"></script>
+</body>
+
+</html>
